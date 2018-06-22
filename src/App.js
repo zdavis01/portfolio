@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navigation from './Components/Navigation/Navigation'
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import PreviewTile from './Components/PreviewTile/PreviewTile';
-import data from './Content/data.json';
+import About from './Layouts/About/About';
 
 class App extends Component {
   render() {
@@ -13,7 +12,12 @@ class App extends Component {
       <div>
         <Header />
         <Navigation />
-        <div className="about"> {data.about} </div>
+
+        <About />
+        <PreviewTile/>
+        <PreviewTile/>
+        <PreviewTile/>
+        <PreviewTile/>
         <PreviewTile/>
         <PreviewTile/>
         <Footer />
