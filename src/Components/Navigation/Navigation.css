@@ -1,0 +1,11 @@
+li {
+  display: none;
+}
+
+@media (min-width: 1281px) {
+
+  li {
+    display: inline;
+    padding: 0 1em 0 2em;
+  }
+}
