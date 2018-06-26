@@ -1,10 +1,7 @@
 .work-tile {
-  height: 8em;
-  background-color: green;
-  padding: 3em;
-  margin-top: 1em;
-
-
+  width: 100%;
+  filter: grayscale(100%);
+  height: 15em;
 }
 
 @media (min-width: 1281px) {
