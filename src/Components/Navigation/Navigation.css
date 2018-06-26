@@ -2,10 +2,28 @@ li {
   display: none;
 }
 
+a.navigationItem {
+  color: black;
+  text-decoration: none;
+}
+
+a.navigationItem:hover {
+  color: #00F;
+}
+
 @media (min-width: 1281px) {
 
   li {
     display: inline;
     padding: 0 1em 0 2em;
+  }
+
+  a.navigationItem {
+    color: black;
+    text-decoration: none;
+  }
+
+  a.navigationItem:hover {
+    color: #00F;
   }
 }

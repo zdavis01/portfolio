@@ -5,6 +5,7 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import PreviewTile from './Components/PreviewTile/PreviewTile';
 import About from './Layouts/About/About';
+import Main from './Main/Main';
 
 class App extends Component {
   render() {
@@ -12,14 +13,7 @@ class App extends Component {
       <div>
         <Header />
         <Navigation />
-
-        <About />
-        <PreviewTile/>
-        <PreviewTile/>
-        <PreviewTile/>
-        <PreviewTile/>
-        <PreviewTile/>
-        <PreviewTile/>
+        <Main/>
         <Footer />
       </div>
     );

@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './Work.css'
 
 const Work = () => {
   return(
-  <div> cunny foo foo </div>
+  <div className="workContainer"> Work </div>
   )
 }
 
