@@ -6,18 +6,20 @@ import Footer from './Components/Footer/Footer';
 import PreviewTile from './Components/PreviewTile/PreviewTile';
 import About from './Layouts/About/About';
 import Main from './Main/Main';
-import Work from './Content/work.json';
+import Projects from './Content/work.json';
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header/>
-        {/* <Navigation/> */}
+        <Navigation/>
         <Main/>
         {
-          Work.map(x =>
-            <PreviewTile to={x.to} src={x.src} alt={x.alt} />
+          Projects.map(project =>
+            <div key={project.key}>
+              <PreviewTile to={project.to} src={project.src} alt={project.alt} />
+            </div>
           )
         }
         <Footer/>

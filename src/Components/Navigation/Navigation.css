@@ -1,5 +1,5 @@
-li {
-  display: none;
+ul{
+  display:none;
 }
 
 a.navigationItem {
@@ -12,6 +12,9 @@ a.navigationItem:hover {
 }
 
 @media (min-width: 1281px) {
+  ul {
+    display:inline;
+  }
 
   li {
     display: inline;

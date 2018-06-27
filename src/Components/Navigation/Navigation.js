@@ -2,13 +2,23 @@ import React from 'react';
 import styles from './Navigation.css';
 import { Link } from 'react-router-dom';
 
+const navigation = [
+    'about',
+    'work',
+    'contact',
+]
+
 const Navigation = () => {
   return(
-    <ul>
-      <li><Link className="navigationItem" to='about'>About</Link></li>
-      <li><Link className="navigationItem" to='work'>Work</Link></li>
-      <li><Link className="navigationItem" to='contact'>Contact</Link></li>
-    </ul>
+    <div>
+      <ul>
+        {navigation.map(item =>
+          <li key={item}>
+            <Link className='navigationItem' to={item}>{item}</Link>
+          </li>
+        )}
+      </ul>
+    </div>
   )
 }
 

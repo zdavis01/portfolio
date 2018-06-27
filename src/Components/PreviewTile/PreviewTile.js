@@ -10,9 +10,9 @@ class PreviewTile extends Component {
 
   render() {
     return (
-      <Link to={this.props.to}>
-        <img src={this.props.src} alt={this.props.alt} className='work-tile'></img>
-      </Link>
+        <Link to={this.props.to}>
+          <img src={this.props.src} alt={this.props.alt} className='work-tile'></img>
+        </Link>
     )
   }
 }
